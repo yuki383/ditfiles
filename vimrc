@@ -14,6 +14,8 @@ Plug 'tpope/vim-surround'
 
 Plug 'vim-jp/vimdoc-ja'
 
+Plug 'prettier/vim-prettier'
+
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
@@ -25,6 +27,10 @@ let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
 let g:lsp_diagnostics_float_cursor = 1
+
+" vim-prettier
+nmap <Leader>cf <Plug>(Prettier)
+nnoremap cf ""
 
 "---------------------------------------
 " Basic Settings
