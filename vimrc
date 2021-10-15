@@ -16,6 +16,8 @@ Plug 'vim-jp/vimdoc-ja'
 
 Plug 'prettier/vim-prettier'
 
+Plug 'alvan/vim-closetag'
+
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
@@ -27,6 +29,9 @@ let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
 let g:lsp_diagnostics_float_cursor = 1
+
+let g:lsp_settings = {'typescript-language-server':{'whitelist': ['typescript', 'typescriptreact']}}
+
 
 " vim-prettier
 nmap <Leader>cf <Plug>(Prettier)
@@ -41,8 +46,8 @@ set autoread
 set autoindent
 set smartindent
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 syntax on
 set number
@@ -52,6 +57,8 @@ set listchars=tab:>-,eol:¬,trail:-,extends:»,precedes:«
 
 set laststatus=2
 set noshowmode
+
+set hlsearch
 
 " leader
 let mapleader = " "
@@ -72,4 +79,9 @@ autocmd ColorScheme * highlight SpecialText ctermfg=238
 
 " theme
 colorscheme iceberg
+
+
+let g:lightline = {
+		\ 'colorscheme': 'wombat',
+		\ }
 
