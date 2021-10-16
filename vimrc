@@ -23,6 +23,8 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 let g:lsp_signs_enabled = 1
@@ -84,4 +86,10 @@ colorscheme iceberg
 let g:lightline = {
 		\ 'colorscheme': 'wombat',
 		\ }
+
+" qiita.com/ka_/items/dad955fe7423318b7dae
+call system('type ibus')
+if v:shell_error == 0
+	inoremap <Esc> <Esc>:call system('ibus engine "xkb:us::eng"')<CR>
+endif
 
