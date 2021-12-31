@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/yuki/workspace/nest-todo/src/todos'
+let g:netrw_dirhist_5='/home/yuki/workspace/hello-nest/src'
+let g:netrw_dirhist_4='/home/yuki/workspace/amplifyapp/src/graphql'
+let g:netrw_dirhist_3='/home/yuki/project/arknights-recruiter/src'
+let g:netrw_dirhist_2='/home/yuki/project/arknights-recruiter'
+let g:netrw_dirhist_1='/home/yuki/workspace/dotfiles/vim/plugged/vim-lsp-settings'
+let g:netrw_dirhist_0='/home/yuki/project/file_manager_proto'
+let g:netrw_dirhist_9='/home/yuki/workspace/dnvim/code/files'
+let g:netrw_dirhist_8='/home/yuki/.vim'
+let g:netrw_dirhist_7='/home/yuki/workspace/arknights-data-gql/pkg/operators'

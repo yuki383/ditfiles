@@ -31,6 +31,8 @@ Plug 'tpope/vim-commentary'
 
 Plug 'ctrlpvim/ctrlp.vim'
 
+Plug 'leafgarland/typescript-vim'
+
 call plug#end()
 
 let g:lsp_signs_enabled = 1
@@ -70,6 +72,8 @@ set laststatus=2
 set noshowmode
 
 set hlsearch
+
+set signcolumn=yes
 
 " leader
 let mapleader = " "
