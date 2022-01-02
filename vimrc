@@ -4,9 +4,10 @@
 
 call plug#begin()
 
+" colorscheme
 Plug 'cocopon/iceberg.vim' 
 
-Plug 'jiangmiao/auto-pairs'
+Plug 'vim-denops/denops.vim'
 
 Plug 'itchyny/lightline.vim'
 
@@ -16,22 +17,30 @@ Plug 'vim-jp/vimdoc-ja'
 
 Plug 'prettier/vim-prettier'
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
+" lsp
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
+
+" completion
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+" typescript
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'leafgarland/typescript-vim'
 
+" prisma
+Plug 'pantharshit00/vim-prisma'
 
+" 
 Plug 'tpope/vim-commentary'
 
 Plug 'ctrlpvim/ctrlp.vim'
 
-Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
