@@ -20,6 +20,9 @@ Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " lsp
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
