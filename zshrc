@@ -20,7 +20,7 @@ source $ZPLUG_HOME/init.zsh
 #prompt
 zplug mafredri/zsh-async, from:github
 zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
-
+zplug zsh-users/zsh-syntax-highlighting, defer:2
 
 #インストールされていないPluginがある場合インストールする
 if ! zplug check --verbose; then
