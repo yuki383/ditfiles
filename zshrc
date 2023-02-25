@@ -9,6 +9,10 @@ if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
+# export path of deno
+export DENO_INSTALL="/home/keyuki/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 #zplugのinit
 export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
