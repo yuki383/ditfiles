@@ -32,3 +32,6 @@ fi
 
 zplug load --verbose
 
+# pnpm
+export PNPM_HOME="/home/keyuki/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"

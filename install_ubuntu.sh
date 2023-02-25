@@ -29,9 +29,13 @@ if !(type "deno" > /dev/null 2>&1); then
   curl -fsSL https://deno.land/x/install/install.sh | sh
 fi
 
-# install nvm and node
+# install pnpm
+if !(type "pnpm" > /dev/null 2>&1); then
+  curl -fsSL https://get.pnpm.io/install.sh | sh -
+fi
+
+# install node
 if !(type "node" > /dev/null 2>&1); then
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-  nvm install v18
+  pnpm env use --global lts
 fi
 
