@@ -10,7 +10,7 @@ if [ -e ~/.zshrc.local ]; then
 fi
 
 # export path of deno
-export DENO_INSTALL="/home/keyuki/.deno"
+export DENO_INSTALL="/home/$(whoami)/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 #zplugのinit
@@ -33,5 +33,5 @@ fi
 zplug load --verbose
 
 # pnpm
-export PNPM_HOME="/home/keyuki/.local/share/pnpm"
+export PNPM_HOME="/home/$(whoami)/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
